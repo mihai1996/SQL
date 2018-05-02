@@ -10,6 +10,7 @@
 	;WITH 
 		ConstantOrder AS (
 			SELECT * FROM (VALUES
+				(1,999999, 'least one order'),
 				(1,1, 'one order'),
 				(1,5, '1-5 orders'),
 				(6,99999, '6+ orders')
@@ -32,5 +33,3 @@
 			--SELECT * FROM OrderResult
 			--SELECT *FROM ConstantOrder
 			--SELECT *FROM CustomerDetails
-
-			
