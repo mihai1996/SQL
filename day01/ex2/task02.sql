@@ -23,7 +23,7 @@
 			),
 		OrderResult AS(
 			SELECT Orders, Counts = SUM(CN)  
-			FROM ConstantOrder A LEFT JOIN CustomerDetails B ON CN BETWEEN Nrdo AND Nrdo
+			FROM ConstantOrder A LEFT JOIN CustomerDetails B ON CN BETWEEN Nrfrom AND Nrdo
 			GROUP BY Orders
 			),
 		ShowResult AS(
